@@ -20,9 +20,11 @@
 <body>
     <p></p>
     <script>
-        let date=new Date()
         let p=document.querySelector('p')
+    setInterval(()=> {
+         let date=new Date()
         p.innerHTML=`Time CLOCK<br>${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}:${date.getMilliseconds()}`
+    },1000)
     </script>
 </body>
 </html>
