@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width:200px;
+            height:100px;
+            border:1px dotted black;
+            margin:130px auto;
+            text-align: center;
+            border-radius: 10px;
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <script>
+        let date=new Date()
+        let p=document.querySelector('p')
+        p.innerHTML=`Time CLOCK<br>${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}:${date.getMilliseconds()}`
+    </script>
+</body>
+</html>
